@@ -59,7 +59,13 @@ We include the configuration files and saved models here to enable reproducibili
 
 ---
 
-## Qualitative Feedback via Topic Modeling
+
+## Other Analysis 
+### Inter-Annotator Agreement
+To assess how consistently experts applied each criterion, Inter-annotator agreement was assessed with the Intraclass Correlation Coefficient $ICC(3,k)$~\cite{shrout1979intraclass}, a two-way mixed-effects, consistency model that estimates how reliably a fixed set of raters assign the same score to the same item. In drug repurposing, agreement was substantial for all three criteria (relevance 0.88, completeness 0.78, validity 0.72; bootstrap 95\% $CIs \leq \pm 0.06$). In drug–target interaction, consistency remained high for relevance (0.73) and for completeness (0.70) but fell to 0.36 for validity, with a wide bootstrap interval ($CI = [0.01, 0.51]$), indicating much greater uncertainty about what counts as biologically plausible for this task.
+
+
+### Qualitative Feedback via Topic Modeling
 To complement our quantitative evaluation and expert ratings, we analyzed free-text comments from participants using BERTopic with custom embeddings and clustering. This allowed us to extract recurring themes and concerns from user feedback across explanation methods.
 
 We clustered the feedback using UMAP-reduced embeddings and HDBSCAN, with topic representations generated via KeyBERT. This helped reveal latent concerns such as biological plausibility, path length complexity, and relation interpretability.
@@ -69,8 +75,7 @@ Each point in the plot represents a participant comment, colored by its assigned
 
 The script is available in evaluation/topic_modeling/create_topics.py, with results saved to Excel for further inspection.
 
-## Inter-Annotator Agreement
-To assess how consistently experts applied each criterion, Inter-annotator agreement was assessed with the Intraclass Correlation Coefficient $ICC(3,k)$~\cite{shrout1979intraclass}, a two-way mixed-effects, consistency model that estimates how reliably a fixed set of raters assign the same score to the same item. In drug repurposing, agreement was substantial for all three criteria (relevance 0.88, completeness 0.78, validity 0.72; bootstrap 95\% $CIs \leq \pm 0.06$). In drug–target interaction, consistency remained high for relevance (0.73) and for completeness (0.70) but fell to 0.36 for validity, with a wide bootstrap interval ($CI = [0.01, 0.51]$), indicating much greater uncertainty about what counts as biologically plausible for this task.
+
 
 ## Repository Structure
 
