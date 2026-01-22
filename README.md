@@ -12,9 +12,8 @@ We compare four KG-based explanation methods—**Minerva**, **PoLo**, **REx** an
 2. **Drug–Target Interaction**
 
 Our evaluation combines:
-
 - **Quantitative link-prediction metrics** (MRR, Hits@k)  
-- **A user study** with 11 biomedical researchers rating explanations on scientific validity, completeness, and relevance  
+- **A user study** with 11 biomedical researchers rating explanations on scientific validity, completeness, and relevance. (Experts' qualitative and quantitative answers are present in the **evaluation/responses** directory)
 - **Qualitative feedback** (topic modeling & visualization)
 
 ---
@@ -49,7 +48,7 @@ The table below reports overall graph size, then train/validation/test splits fo
 
 ##  Methods
 
-We include configuration files and saved models here; full implementations are in their upstream repos:
+We include the configuration files and saved models here to enable reproducibility (all hyperparameters were default); full implementations instructions are in their upstream repositories:
 
 | Method     | GitHub                                          |
 | ---------- | ----------------------------------------------- |
@@ -88,6 +87,7 @@ KG-Explanations-UserStudy/
 │
 ├── evaluation/             # User-study materials, aggregated results, plots
 │   ├── user_study/
+│   ├── responses/
 │   ├── topic_modeling/
 │   └── figures/
 │
