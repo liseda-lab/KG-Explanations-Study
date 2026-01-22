@@ -85,7 +85,7 @@ KG-Explanations-UserStudy/
 │   ├── config_files/
 │   └── saved_models/
 │
-├── evaluation/             # User-study materials, aggregated results, plots
+├── evaluation/             # User-study materials, aggregated results, plots, rates and written feedback
 │   ├── user_study/
 │   ├── responses/
 │   ├── topic_modeling/
