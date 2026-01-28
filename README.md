@@ -34,7 +34,7 @@ The table below reports overall graph size, then train/validation/test splits fo
 
 | Category                    | Metric   | Hetionet  | PrimeKG   | OREGANO   |
 | --------------------------- | -------- | --------- | --------- | --------- |
-| **Global Stats**            | Triples  | 4 499 850 | 8 096 649 | 1 571 899 |
+| **Global Stats**            | Triples  | 4 499 850 | 8 096 649 | 1 571 714 |
 |                             | Entities |  45 158   | 129 313   |  98 602   |
 |                             | Relations|    48     |    33     |    38     |
 | **Drug Repurposing**        | Train    |    483    |  7 510    |    117    |
