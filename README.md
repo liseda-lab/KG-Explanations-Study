@@ -1,6 +1,6 @@
 # KG-Explanations-Study
 **Explaining Scientific Hypotheses in Drug Development with Knowledge Graphs**  
-Resources, code, and data for our ESWC 2026 paper.
+Resources, code, and data for our paper here.
 
 ---
 
