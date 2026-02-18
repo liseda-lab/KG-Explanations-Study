@@ -57,6 +57,14 @@ We include the configuration files and saved models here to enable reproducibili
 | **REx**      | https://github.com/liseda-lab/REx                |
 
 
+| Method | Reasoning / model | Explanation output | Ontology in explanation | How paths are guided / selected |
+|---|---|---|---|---|
+| MINERVA (Das et al., 2017) | RL multi-hop traversal (LSTM policy) | Single path | No | Reward mainly for reaching correct target (predictive success), no explicit interpretability constraints |
+| PoLo (Liu et al., 2021) | MINERVA + logical-rule guidance | Single path | No | Adds rule-based reward: encourages traversals aligned with predefined logical rules (with confidence scores) |
+| REx (Nunes et al., 2025) | RL with scientific explainability objectives | Multiple paths | Yes | Dual reward balances fidelity + relevance (information content), early stopping for simplicity, optional ontology expansions (NCIT/ChEBI for repurposing; GO for DTI) |
+| RExLight | REx ablation | Multiple paths | No | Same mechanism as REx, but removes ontology-derived nodes to isolate the effect of semantic abstraction |
+
+
 ---
 
 
